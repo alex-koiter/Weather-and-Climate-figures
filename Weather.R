@@ -7,7 +7,7 @@ library(patchwork)
 stations_search(name = "brandon")
 
 # Download daily weather data for 2020
-df_day <- weather_dl(station_ids = 49909, interval = "day", start = "2020-01-01")  %>%
+df_day <- weather_dl(station_ids = 49909, interval = "day", start = "2020-01-01", end = "2020-12-31")  %>%
   mutate(title = '2020 Daily')
 
 # download hourly weather data
